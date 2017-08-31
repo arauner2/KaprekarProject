@@ -39,7 +39,8 @@ int isKaprekar(int n) {
     modulus *= 10;
     first = square / modulus;
     second = square % modulus;
-    if(second > 0 && first + second == n) {
+    //first should be greater than or equal to 1
+    if(first >= 0; second > 0 && first + second == n) {
       return 1;
     }
   }
