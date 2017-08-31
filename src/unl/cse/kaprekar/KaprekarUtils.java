@@ -29,7 +29,8 @@ public class KaprekarUtils {
 		} 
 		
 		//we use a long to accommodate larger squares
-		long square = n * n;
+		//cast one int to long b/c int is too small for some squares
+		long square = (long)n * n;
 		//find number of digits in square, not n
 		int numDigits = (int) Math.log10(square) + 1;
 		long modulus = 1;
